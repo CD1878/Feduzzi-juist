@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/16f03db7-bfb3-4423-ba5e-5ee1ee41d9dd/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Werken bij Feduzzi — Feduzzi Mercato Italiano</title>
+    
+    <!-- Google Fonts: Abel (used in original) and Playfair Display for headings to match style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Didact+Gothic&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'feduzzi-red': '#8F1A2C', 
+              'feduzzi-green': '#6E9070',
+              'feduzzi-dark': '#111111',
+              'feduzzi-cream': '#FDFBF7',
+            },
+            fontFamily: {
+              sans: ['Didact Gothic', 'sans-serif'], // Close match to their body font
+              serif: ['Playfair Display', 'serif'], // For the elegant quotes
+              header: ['Abel', 'sans-serif'], // Specific header font mentioned in source
+            },
+            backgroundImage: {
+              'hero-pattern': "url('https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/79a77524-d471-4efd-a2e7-8ff38bffe8c2/380536255_172926439119013_1414290766591190903_n.jpg?format=2500w')",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar to match premium feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #8F1A2C; 
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.574.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
