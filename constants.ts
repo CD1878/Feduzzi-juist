@@ -11,7 +11,7 @@ export const NAV_ITEMS: NavItem[] = [
       { label: 'Traiteur', href: '/menu/traiteur' },
     ]
   },
-  { label: 'Webshop', href: '/webshop' },
+  { label: 'Bestellen', href: '/webshop' },
   { label: 'Sfeer', href: '/sfeer' },
   { label: 'Over ons', href: '/over-ons' },
   { label: 'Werken bij', href: '/werken-bij' },

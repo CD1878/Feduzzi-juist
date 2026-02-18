@@ -5,10 +5,16 @@ import { useStore } from '../../store/useStore';
 
 interface ProductCardProps {
     product: Product;
+    onAddToCart?: () => void;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }) => {
     const addToCart = useStore((state) => state.addToCart);
+
+    const handleAdd = () => {
+        addToCart(product);
+        if (onAddToCart) onAddToCart();
+    };
 
     return (
         <div className="group bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden flex flex-col h-full border border-gray-100">
@@ -20,7 +26,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                 />
                 <button
-                    onClick={() => addToCart(product)}
+                    onClick={handleAdd}
                     className="absolute bottom-3 right-3 bg-white text-feduzzi-green p-2 rounded-full shadow-lg hover:bg-feduzzi-green hover:text-white transition-colors duration-300 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0"
                     aria-label="Add to cart"
                 >
@@ -44,7 +50,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                 </p>
 
                 <button
-                    onClick={() => addToCart(product)}
+                    onClick={handleAdd}
                     className="w-full py-2 border border-feduzzi-green text-feduzzi-green text-sm font-medium rounded hover:bg-feduzzi-green hover:text-white transition-colors uppercase tracking-wider"
                 >
                     Toevoegen

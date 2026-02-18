@@ -21,14 +21,14 @@ const WebshopPage: React.FC = () => {
 
             {/* Hero / Header for Shop */}
             <section className="bg-feduzzi-green text-white pt-32 pb-16 text-center px-4 relative">
-                <h1 className="font-serif text-4xl md:text-5xl mb-4">Onze Webshop</h1>
+                <h1 className="font-serif text-4xl md:text-5xl mb-4">Bestellen</h1>
                 <p className="font-light text-lg max-w-2xl mx-auto opacity-90">
                     Bestel je favoriete Italiaanse delicatessen direct online.
                 </p>
             </section>
 
             {/* Sticky Category Nav */}
-            <div className="sticky top-[80px] z-30 bg-white shadow-sm border-b border-gray-200">
+            <div className="sticky top-[110px] z-30 bg-white shadow-sm border-b border-gray-200">
                 <div className="container mx-auto px-4 overflow-x-auto scrollbar-hide">
                     <nav className="flex justify-center min-w-max">
                         {categories.map(cat => (
@@ -37,7 +37,7 @@ const WebshopPage: React.FC = () => {
                                 to={cat}
                                 smooth={true}
                                 duration={500}
-                                offset={-140} // Offset for header + sticky nav
+                                offset={-160} // Offset for header + sticky nav
                                 className="px-6 py-4 text-gray-600 font-medium uppercase tracking-wider hover:text-feduzzi-green hover:bg-gray-50 border-b-2 border-transparent hover:border-feduzzi-green cursor-pointer transition-all"
                                 activeClass="text-feduzzi-green border-feduzzi-green bg-gray-50"
                                 spy={true}
@@ -66,7 +66,11 @@ const WebshopPage: React.FC = () => {
                             {/* Denser Grid: sm:2, lg:3, xl:4 */}
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                                 {categoryProducts.map((product) => (
-                                    <ProductCard key={product.id} product={product} />
+                                    <ProductCard
+                                        key={product.id}
+                                        product={product}
+                                        onAddToCart={() => setIsCartOpen(true)}
+                                    />
                                 ))}
                             </div>
                         </div>
