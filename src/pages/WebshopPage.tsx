@@ -42,7 +42,7 @@ const WebshopPage: React.FC = () => {
             </section>
 
             {/* Sticky Category Nav */}
-            <div className="sticky top-[100px] z-30 bg-white shadow-sm border-b border-gray-200">
+            <div className="sticky top-[120px] z-30 bg-white shadow-sm border-b border-gray-200">
                 <div className="container mx-auto px-4 overflow-x-auto scrollbar-hide">
                     <nav className="flex justify-center min-w-max">
                         {categories.map(cat => (
@@ -51,7 +51,7 @@ const WebshopPage: React.FC = () => {
                                 to={cat}
                                 smooth={true}
                                 duration={500}
-                                offset={-160} // Offset for header + sticky nav
+                                offset={-180} // Offset for header + sticky nav
                                 className="px-6 py-4 text-gray-600 font-medium uppercase tracking-wider hover:text-feduzzi-green hover:bg-gray-50 border-b-2 border-transparent hover:border-feduzzi-green cursor-pointer transition-all"
                                 activeClass="text-feduzzi-green border-feduzzi-green bg-gray-50"
                                 spy={true}
