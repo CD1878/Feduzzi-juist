@@ -9,10 +9,12 @@ import OverOnsPage from './src/pages/OverOnsPage';
 import WerkenBijPage from './src/pages/WerkenBijPage';
 import VestigingenAmsterdamPage from './src/pages/VestigingenAmsterdamPage';
 import VestigingenLarenPage from './src/pages/VestigingenLarenPage';
+import ScrollToTop from './src/components/ScrollToTop';
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/menu" element={<MenuPage />} />

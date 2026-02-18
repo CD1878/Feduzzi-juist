@@ -148,14 +148,14 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 bg-black bg-opacity-95 z-40 flex flex-col justify-center items-center transition-opacity duration-300 ${mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        className={`fixed inset-0 bg-feduzzi-red/95 backdrop-blur-sm z-40 flex flex-col justify-center items-center transition-all duration-500 ${mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
           }`}
       >
-        <nav className="flex flex-col items-center space-y-6 text-white font-sans text-2xl">
+        <nav className="flex flex-col items-center space-y-8 text-white font-sans text-3xl font-light tracking-wide">
           {NAV_ITEMS.map((item) => (
-            <div key={item.label} className="flex flex-col items-center">
+            <div key={item.label} className="flex flex-col items-center group">
               <div
-                className="flex items-center cursor-pointer"
+                className="flex items-center cursor-pointer hover:text-black/80 transition-colors"
                 onClick={() => item.subItems ? toggleDropdown(item.label) : null}
               >
                 {!item.subItems ? (
@@ -164,31 +164,35 @@ const Header: React.FC = () => {
                   <span>{item.label}</span>
                 )}
 
-                {item.subItems && <ChevronDown size={20} className={`ml-2 transform transition-transform ${activeDropdown === item.label ? 'rotate-180' : ''}`} />}
+                {item.subItems && <ChevronDown size={24} className={`ml-2 transform transition-transform duration-300 ${activeDropdown === item.label ? 'rotate-180' : ''}`} />}
               </div>
 
               {/* Mobile Submenu */}
-              {item.subItems && activeDropdown === item.label && (
-                <div className="mt-4 flex flex-col items-center space-y-3 text-lg text-gray-400">
-                  {item.subItems.map(sub => (
-                    <div key={sub.label} onClick={() => setMobileMenuOpen(false)}>
-                      {renderLink(sub)}
-                    </div>
-                  ))}
+              {item.subItems && (
+                <div
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${activeDropdown === item.label ? 'max-h-60 opacity-100 mt-4' : 'max-h-0 opacity-0'}`}
+                >
+                  <div className="flex flex-col items-center space-y-4 text-xl text-white/80">
+                    {item.subItems.map(sub => (
+                      <div key={sub.label} onClick={() => setMobileMenuOpen(false)}>
+                        {renderLink(sub, "hover:text-white")}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
           ))}
           <a
-            href="#order"
-            className="mt-8 bg-feduzzi-red px-8 py-3 rounded text-lg uppercase tracking-wide"
+            href="/#order"
+            className="mt-8 border-2 border-white px-10 py-3 rounded-full text-xl uppercase tracking-widest hover:bg-white hover:text-feduzzi-red transition-all duration-300"
             onClick={() => setMobileMenuOpen(false)}
           >
             Bestel broodjes
           </a>
-          <div className="flex space-x-6 mt-8">
-            <a href="#" className="text-white"><Facebook size={28} /></a>
-            <a href="#" className="text-white"><Instagram size={28} /></a>
+          <div className="flex space-x-8 mt-12">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="text-white hover:text-black transition-colors"><Facebook size={32} /></a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-white hover:text-black transition-colors"><Instagram size={32} /></a>
           </div>
         </nav>
       </div>
