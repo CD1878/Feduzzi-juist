@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { PANINI_ITEMS, HOT_PANINI_ITEMS, MenuSection as MenuSectionType, MenuItem as MenuItemType } from '../constants/broodjes';
@@ -68,9 +69,9 @@ const BroodjesPage: React.FC = () => {
                     {/* Bottom CTA */}
                     <div className="text-center mt-12 pb-12">
                         <div className="flex flex-col items-center gap-2">
-                            <a href="/webshop" className="border border-feduzzi-green text-feduzzi-green px-10 py-4 uppercase tracking-widest text-sm rounded-[3px] hover:bg-feduzzi-green hover:text-white transition-colors shadow-sm bg-white">
+                            <Link to="/webshop" className="border border-feduzzi-green text-feduzzi-green px-10 py-4 uppercase tracking-widest text-sm rounded-[3px] hover:bg-feduzzi-green hover:text-white transition-colors shadow-sm bg-white">
                                 Broodjes online bestellen
-                            </a>
+                            </Link>
                             <span className="text-[10px] text-gray-500 uppercase tracking-wide mt-1">
                                 minimaal 24 uur van te voren
                             </span>
