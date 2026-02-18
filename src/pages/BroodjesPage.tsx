@@ -48,8 +48,17 @@ const BroodjesPage: React.FC = () => {
         <div className="min-h-screen bg-white flex flex-col">
             <Header />
             <main className="flex-grow">
-                {/* Hero-like header usually goes here, but for now we follow the component structure */}
-                <div className="bg-white py-16 md:py-24">
+                {/* Hero Section */}
+                <section className="relative h-[40vh] md:h-[50vh] bg-cover bg-center bg-no-repeat flex items-center justify-center" style={{ backgroundImage: 'url("https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/3841bf8c-c54c-4f60-b994-6454f78f8635/379057150_18194403076287593_862347559648358630_n.jpg")' }}>
+                    <div className="absolute inset-0 bg-black/40"></div>
+                    <div className="relative z-10 text-center px-4">
+                        <h1 className="text-white font-serif text-4xl md:text-6xl font-light tracking-wide">
+                            Onze Broodjes
+                        </h1>
+                    </div>
+                </section>
+
+                <div className="bg-feduzzi-cream py-16 md:py-24">
                     {/* Cold Panini */}
                     <Section section={PANINI_ITEMS} greenHighlight={true} />
 
@@ -59,7 +68,7 @@ const BroodjesPage: React.FC = () => {
                     {/* Bottom CTA */}
                     <div className="text-center mt-12 pb-12">
                         <div className="flex flex-col items-center gap-2">
-                            <a href="/webshop" className="bg-feduzzi-green text-white px-10 py-4 uppercase tracking-widest text-sm rounded-[3px] hover:bg-opacity-90 transition-opacity shadow-sm">
+                            <a href="/webshop" className="border border-feduzzi-green text-feduzzi-green px-10 py-4 uppercase tracking-widest text-sm rounded-[3px] hover:bg-feduzzi-green hover:text-white transition-colors shadow-sm bg-white">
                                 Broodjes online bestellen
                             </a>
                             <span className="text-[10px] text-gray-500 uppercase tracking-wide mt-1">
