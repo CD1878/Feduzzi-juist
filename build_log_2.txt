@@ -1,0 +1,15 @@
+
+> feduzzi-mercato-italiano-clone@0.0.0 build
+> vite build
+
+vite v6.4.1 building for production...
+transforming...
+✓ 29 modules transformed.
+✗ Build failed in 106ms
+error during build:
+Could not resolve "../../components/traiteur/Hero" from "src/pages/TraiteurPage.tsx"
+file: /Users/jtijs/Downloads/dr wines test/Blue Fusion/Helmers/Mollie/Switch/Uiver/Blue Fusion website/Blue Fusion Testtttt/Blue fusion nog een keer/BF/BFBF/BlueBlue/BlueBlue/TestTest/BFBFBFBFBFBF/1 pagina test/Wijnbar Clos/Charts analysis/Feduzzi/Feduzzi juist/src/pages/TraiteurPage.tsx
+    at getRollupError (file:///Users/jtijs/Downloads/dr%20wines%20test/Blue%20Fusion/Helmers/Mollie/Switch/Uiver/Blue%20Fusion%20website/Blue%20Fusion%20Testtttt/Blue%20fusion%20nog%20een%20keer/BF/BFBF/BlueBlue/BlueBlue/TestTest/BFBFBFBFBFBF/1%20pagina%20test/Wijnbar%20Clos/Charts%20analysis/Feduzzi/Feduzzi%20juist/node_modules/rollup/dist/es/shared/parseAst.js:402:41)
+    at error (file:///Users/jtijs/Downloads/dr%20wines%20test/Blue%20Fusion/Helmers/Mollie/Switch/Uiver/Blue%20Fusion%20website/Blue%20Fusion%20Testtttt/Blue%20fusion%20nog%20een%20keer/BF/BFBF/BlueBlue/BlueBlue/TestTest/BFBFBFBFBFBF/1%20pagina%20test/Wijnbar%20Clos/Charts%20analysis/Feduzzi/Feduzzi%20juist/node_modules/rollup/dist/es/shared/parseAst.js:398:42)
+    at ModuleLoader.handleInvalidResolvedId (file:///Users/jtijs/Downloads/dr%20wines%20test/Blue%20Fusion/Helmers/Mollie/Switch/Uiver/Blue%20Fusion%20website/Blue%20Fusion%20Testtttt/Blue%20fusion%20nog%20een%20keer/BF/BFBF/BlueBlue/BlueBlue/TestTest/BFBFBFBFBFBF/1%20pagina%20test/Wijnbar%20Clos/Charts%20analysis/Feduzzi/Feduzzi%20juist/node_modules/rollup/dist/es/shared/node-entry.js:21687:24)
+    at file:///Users/jtijs/Downloads/dr%20wines%20test/Blue%20Fusion/Helmers/Mollie/Switch/Uiver/Blue%20Fusion%20website/Blue%20Fusion%20Testtttt/Blue%20fusion%20nog%20een%20keer/BF/BFBF/BlueBlue/BlueBlue/TestTest/BFBFBFBFBFBF/1%20pagina%20test/Wijnbar%20Clos/Charts%20analysis/Feduzzi/Feduzzi%20juist/node_modules/rollup/dist/es/shared/node-entry.js:21647:26

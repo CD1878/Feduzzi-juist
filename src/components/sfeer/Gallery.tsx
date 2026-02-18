@@ -10,7 +10,7 @@ const Gallery: React.FC = () => {
                     {GALLERY_ITEMS.map((item) => (
                         <div
                             key={item.id}
-                            className="relative aspect-square group overflow-hidden cursor-pointer bg-gray-100"
+                            className="relative aspect-square group overflow-hidden cursor-pointer bg-gray-100 rounded-[15px] border-4 border-white shadow-sm"
                         >
                             <img
                                 src={item.src}

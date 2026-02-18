@@ -6,11 +6,12 @@ export const NAV_ITEMS: NavItem[] = [
     href: '#menu',
     subItems: [
       { label: 'Menu', href: '/menu' },
-      { label: 'Broodjes', href: '#broodjes' },
+      { label: 'Broodjes', href: '/menu/broodjes' },
       { label: 'Maaltijden', href: '/menu/maaltijden' },
       { label: 'Traiteur', href: '/menu/traiteur' },
     ]
   },
+  { label: 'Webshop', href: '/webshop' },
   { label: 'Sfeer', href: '/sfeer' },
   { label: 'Over ons', href: '/over-ons' },
   { label: 'Werken bij', href: '/werken-bij' },
@@ -37,7 +38,7 @@ export const SERVICES: ServiceItem[] = [
     description: 'Royaal belegde Italiaanse broodjes om van te genieten tijdens de lunchpauze. Bestel jouw favoriet via de knop hieronder',
     image: 'https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/3841bf8c-c54c-4f60-b994-6454f78f8635/379057150_18194403076287593_862347559648358630_n.jpg',
     buttonText: 'Bekijk broodjes',
-    link: '#broodjes'
+    link: '/menu/broodjes'
   },
   {
     title: 'Traiteur',

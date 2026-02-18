@@ -9,6 +9,10 @@ import OverOnsPage from './src/pages/OverOnsPage';
 import WerkenBijPage from './src/pages/WerkenBijPage';
 import VestigingenAmsterdamPage from './src/pages/VestigingenAmsterdamPage';
 import VestigingenLarenPage from './src/pages/VestigingenLarenPage';
+import WebshopPage from './src/pages/WebshopPage';
+import CheckoutPage from './src/pages/CheckoutPage';
+import AdminPage from './src/pages/AdminPage';
+import BroodjesPage from './src/pages/BroodjesPage';
 import ScrollToTop from './src/components/ScrollToTop';
 
 const App: React.FC = () => {
@@ -17,14 +21,18 @@ const App: React.FC = () => {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/menu" element={<MenuPage />} />
-        <Route path="/menu/maaltijden" element={<MaaltijdenPage />} />
-        <Route path="/menu/traiteur" element={<TraiteurPage />} />
-        <Route path="/sfeer" element={<SfeerPage />} />
         <Route path="/over-ons" element={<OverOnsPage />} />
+        <Route path="/menu" element={<MenuPage />} />
+        <Route path="/menu/broodjes" element={<BroodjesPage />} />
+        <Route path="/traiteur" element={<TraiteurPage />} />
+        <Route path="/maaltijden" element={<MaaltijdenPage />} />
+        <Route path="/sfeer" element={<SfeerPage />} />
         <Route path="/werken-bij" element={<WerkenBijPage />} />
         <Route path="/vestigingen/amsterdam" element={<VestigingenAmsterdamPage />} />
         <Route path="/vestigingen/laren" element={<VestigingenLarenPage />} />
+        <Route path="/webshop" element={<WebshopPage />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/admin" element={<AdminPage />} />
       </Routes>
     </BrowserRouter>
   );
