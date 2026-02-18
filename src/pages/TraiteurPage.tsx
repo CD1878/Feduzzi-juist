@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import Hero from '../../components/traiteur/Hero';
-import MenuSection from '../../components/traiteur/MenuSection';
+import Hero from '../components/traiteur/Hero';
+import MenuSection from '../components/traiteur/MenuSection';
 import {
     schalenItems,
     pastas1Items,
@@ -12,7 +12,7 @@ import {
     vleesItems,
     dessertsItems,
     sidesItems
-} from '../../constants/traiteur';
+} from '../constants/traiteur';
 
 const TraiteurPage: React.FC = () => {
     return (
