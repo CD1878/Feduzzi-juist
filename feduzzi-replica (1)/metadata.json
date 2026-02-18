@@ -1,0 +1,5 @@
+{
+  "name": "Feduzzi Replica",
+  "description": "A pixel-perfect recreation of the Feduzzi Mercato Italiano 'Over ons' page using React and Tailwind CSS.",
+  "requestFramePermissions": []
+}
