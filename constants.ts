@@ -30,22 +30,22 @@ export const SERVICES: ServiceItem[] = [
     title: 'Maaltijden',
     description: "Heerlijke maaltijden van (vega)lasagne's tot authentieke pasta's en verfijnde desserts. Bekijk ons uitgebreide menu via de button hieronder",
     image: 'https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/c8d2dd66-dbfb-45a3-86cb-93f27781a6d8/366812388_18189725005287593_995257834228342735_n.jpg',
-    buttonText: 'Bekijk het maaltijden menu',
-    link: '/menu/maaltijden'
+    buttonText: 'Bestel maaltijden',
+    link: '/webshop#maaltijden'
   },
   {
     title: 'Broodjes',
     description: 'Royaal belegde Italiaanse broodjes om van te genieten tijdens de lunchpauze. Bestel jouw favoriet via de knop hieronder',
     image: 'https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/3841bf8c-c54c-4f60-b994-6454f78f8635/379057150_18194403076287593_862347559648358630_n.jpg',
-    buttonText: 'Bekijk broodjes',
-    link: '/menu/broodjes'
+    buttonText: 'Bestel broodjes',
+    link: '/webshop#broodjes'
   },
   {
     title: 'Traiteur',
     description: 'Verse bereide maaltijden voor bijzondere (zakelijke) gelegenheden die we aan de deur komen brengen of die je gemakkelijk ophaalt bij ons. Bekijk ons uitgebreide overzicht',
     image: 'https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/79a77524-d471-4efd-a2e7-8ff38bffe8c2/380536255_172926439119013_1414290766591190903_n.jpg',
-    buttonText: 'Bekijk het catering menu',
-    link: '/menu/traiteur'
+    buttonText: 'Bekijk catering',
+    link: '/webshop#traiteur'
   }
 ];
 

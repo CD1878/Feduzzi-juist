@@ -7,13 +7,27 @@ import { products } from '../data/products';
 import { useStore } from '../store/useStore';
 import { ShoppingBag, ChevronDown } from 'lucide-react';
 import { Link } from 'react-scroll';
+import { useLocation } from 'react-router-dom';
 
 const WebshopPage: React.FC = () => {
     const [isCartOpen, setIsCartOpen] = useState(false);
     const { cart } = useStore();
     const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    const { hash } = useLocation();
 
     const categories = ['broodjes', 'maaltijden', 'traiteur'];
+
+    React.useEffect(() => {
+        if (hash) {
+            const id = hash.replace('#', '');
+            const element = document.getElementById(id);
+            if (element) {
+                setTimeout(() => {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        }
+    }, [hash]);
 
     return (
         <div className="font-sans text-gray-800 bg-gray-50 min-h-screen flex flex-col">

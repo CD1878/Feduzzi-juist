@@ -15,7 +15,7 @@ const Services: React.FC = () => {
             <div
               key={index}
               id={service.title.toLowerCase()}
-              className="flex flex-col items-center text-center group scroll-mt-24"
+              className="flex flex-col items-center text-center group scroll-mt-24 h-full"
             >
               <div className="w-full aspect-square overflow-hidden rounded-md mb-8 shadow-sm">
                 <img
