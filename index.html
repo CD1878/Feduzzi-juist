@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Feduzzi Mercato Italiano - Italiaanse delicatessenwinkel Amsterdam</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              'feduzzi-red': '#8e1528', // Deep burgundy from the site
-              'feduzzi-cream': '#f9f9f7', // Light background for the content area
-            },
-            fontFamily: {
-              sans: ['Abel', 'sans-serif'],
-              serif: ['"Playfair Display"', 'serif'],
-            },
-            backgroundImage: {
-              'hero-overlay': 'linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5))',
-            }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feduzzi Mercato Italiano - Italiaanse delicatessenwinkel Amsterdam</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'feduzzi-red': '#8e1528', // Deep burgundy from the site
+            'feduzzi-dark-red': '#8e1828',
+            'feduzzi-green': '#799a74',
+            'feduzzi-cream': '#f9f9f7', // Light background for the content area
+            'feduzzi-dark': '#1a1a1a',
+          },
+          fontFamily: {
+            sans: ['Abel', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          backgroundImage: {
+            'hero-overlay': 'linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5))',
+            'hero-pattern': "url('https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/b6060c89-2ea4-4c8a-8479-1c651f53d3b4/374747649_620261653307023_8620719050344451705_n.jpg?format=2500w')",
+            'careers-hero': "url('https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/79a77524-d471-4efd-a2e7-8ff38bffe8c2/380536255_172926439119013_1414290766591190903_n.jpg?format=2500w')",
+            'amsterdam-hero': "url('https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/8e884699-2a3f-4446-a5af-83361034ee1e/360146671_18185506990287593_8295250444765476929_n.jpg')",
+            'laren-hero': "url('https://images.unsplash.com/photo-1481931098730-318b6f776db0?q=80&w=2500&auto=format&fit=crop')",
           }
         }
       }
-    </script>
-    <style>
-      /* Custom scrollbar to match elegance */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #8e1528;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #6d101e;
-      }
-      body {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-    </style>
+    }
+  </script>
+  <style>
+    /* Custom scrollbar to match elegance */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #8e1528;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #6d101e;
+    }
+
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
   <script type="importmap">
 {
   "imports": {
@@ -57,8 +71,10 @@
 }
 </script>
 </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
 </html>

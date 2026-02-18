@@ -1,25 +1,25 @@
 import { NavItem, ServiceItem } from './types';
 
 export const NAV_ITEMS: NavItem[] = [
-  { 
-    label: 'Menu', 
+  {
+    label: 'Menu',
     href: '#menu',
     subItems: [
-      { label: 'Menu', href: '#menu-main' },
+      { label: 'Menu', href: '/menu' },
       { label: 'Broodjes', href: '#broodjes' },
-      { label: 'Maaltijden', href: '#maaltijden' },
-      { label: 'Traiteur', href: '#traiteur' },
+      { label: 'Maaltijden', href: '/menu/maaltijden' },
+      { label: 'Traiteur', href: '/menu/traiteur' },
     ]
   },
-  { label: 'Sfeer', href: '#sfeer' },
-  { label: 'Over ons', href: '#over-ons' },
-  { label: 'Werken bij', href: '#werken-bij' },
-  { 
-    label: 'Vestigingen', 
+  { label: 'Sfeer', href: '/sfeer' },
+  { label: 'Over ons', href: '/over-ons' },
+  { label: 'Werken bij', href: '/werken-bij' },
+  {
+    label: 'Vestigingen',
     href: '#vestigingen',
     subItems: [
-      { label: 'Amsterdam', href: '#amsterdam' },
-      { label: 'Laren', href: '#laren' },
+      { label: 'Amsterdam', href: '/vestigingen/amsterdam' },
+      { label: 'Laren', href: '/vestigingen/laren' },
     ]
   },
 ];
@@ -30,7 +30,7 @@ export const SERVICES: ServiceItem[] = [
     description: "Heerlijke maaltijden van (vega)lasagne's tot authentieke pasta's en verfijnde desserts. Bekijk ons uitgebreide menu via de button hieronder",
     image: 'https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/c8d2dd66-dbfb-45a3-86cb-93f27781a6d8/366812388_18189725005287593_995257834228342735_n.jpg',
     buttonText: 'Bekijk het maaltijden menu',
-    link: '#maaltijden'
+    link: '/menu/maaltijden'
   },
   {
     title: 'Broodjes',
@@ -44,7 +44,7 @@ export const SERVICES: ServiceItem[] = [
     description: 'Verse bereide maaltijden voor bijzondere (zakelijke) gelegenheden die we aan de deur komen brengen of die je gemakkelijk ophaalt bij ons. Bekijk ons uitgebreide overzicht',
     image: 'https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/79a77524-d471-4efd-a2e7-8ff38bffe8c2/380536255_172926439119013_1414290766591190903_n.jpg',
     buttonText: 'Bekijk het catering menu',
-    link: '#catering'
+    link: '/menu/traiteur'
   }
 ];
 
