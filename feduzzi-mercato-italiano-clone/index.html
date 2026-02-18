@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/16f03db7-bfb3-4423-ba5e-5ee1ee41d9dd/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Menu Feduzzi Amsterdam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'feduzzi-red': '#981b2e',
+              'feduzzi-dark-red': '#8e1828',
+              'feduzzi-green': '#799a74',
+              'feduzzi-cream': '#f9f9f7',
+              'feduzzi-dark': '#1a1a1a',
+            },
+            fontFamily: {
+              sans: ['Abel', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            backgroundImage: {
+              'hero-pattern': "url('https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/b6060c89-2ea4-4c8a-8479-1c651f53d3b4/374747649_620261653307023_8620719050344451705_n.jpg?format=2500w')",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.574.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
