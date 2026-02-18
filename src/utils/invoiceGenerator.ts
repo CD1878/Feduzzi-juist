@@ -48,6 +48,10 @@ export const generateInvoice = (order: Order) => {
         y += 5;
         doc.text(`BTW: ${order.customer.vatNumber}`, 20, y);
     }
+    if (order.customer.kvkNumber) {
+        y += 5;
+        doc.text(`KVK: ${order.customer.kvkNumber}`, 20, y);
+    }
 
     y += 15;
 

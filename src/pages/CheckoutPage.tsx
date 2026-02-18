@@ -106,7 +106,7 @@ const CheckoutPage: React.FC = () => {
                         </div>
                         <h1 className="font-serif text-3xl md:text-4xl text-gray-900 mb-4">Bedankt voor je bestelling!</h1>
                         <p className="text-gray-600 text-lg mb-8">
-                            We hebben je bestelling in goede orde ontvangen. De factuur is zojuist automatisch gedownload.
+                            We hebben je bestelling in goede orde ontvangen. De factuur is zojuist automatisch gedownload en per e-mail verzonden naar <strong>{customer.email}</strong>.
                             We gaan direct voor je aan de slag!
                         </p>
                         <div className="flex justify-center gap-4">

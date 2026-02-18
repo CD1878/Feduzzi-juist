@@ -57,7 +57,7 @@ const MenuPage: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
             {/* Image (B&W Sandwich from source concept) */}
             <div className="w-full md:w-1/2">
-              <div className="aspect-[4/3] overflow-hidden rounded-sm relative">
+              <div className="aspect-[4/3] overflow-hidden rounded-[15px] border-4 border-white relative shadow-sm">
                 {/* Using a high quality B&W food image to match style */}
                 <img
                   src="https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/b6060c89-2ea4-4c8a-8479-1c651f53d3b4/374747649_620261653307023_8620719050344451705_n.jpg?format=1000w"
@@ -112,7 +112,7 @@ const MenuPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             {/* Maaltijden */}
             <div id="maaltijden" className="flex flex-col space-y-6 scroll-mt-32">
-              <div className="aspect-square overflow-hidden rounded-md">
+              <div className="aspect-square overflow-hidden rounded-[15px] border-4 border-white shadow-sm">
                 <img
                   src="https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/c8d2dd66-dbfb-4173-86cb-93f27781a6d8/366812388_18189725005287593_995257834228342735_n.jpg?format=1000w"
                   alt="Maaltijden"
@@ -132,7 +132,7 @@ const MenuPage: React.FC = () => {
 
             {/* Broodjes */}
             <div id="broodjes" className="flex flex-col space-y-6 scroll-mt-32">
-              <div className="aspect-square overflow-hidden rounded-md">
+              <div className="aspect-square overflow-hidden rounded-[15px] border-4 border-white shadow-sm">
                 <img
                   src="https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/3841bf8c-c54c-4f60-b994-6454f78f8635/379057150_18194403076287593_862347559648358630_n.jpg?format=1000w"
                   alt="Broodjes"
@@ -152,7 +152,7 @@ const MenuPage: React.FC = () => {
 
             {/* Traiteur */}
             <div id="traiteur" className="flex flex-col space-y-6 scroll-mt-32">
-              <div className="aspect-square overflow-hidden rounded-md">
+              <div className="aspect-square overflow-hidden rounded-[15px] border-4 border-white shadow-sm">
                 <img
                   src="https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/b493b45d-de27-424d-847d-aad25edc4462/Authentiek+Italiaans+restaurant%2C+Italiaans+restaurant+Amsterdam%2C+Italiaans+restaurant+omgeving+Amsterdam33.jpeg?format=1000w"
                   alt="Traiteur"
@@ -190,7 +190,7 @@ const MenuPage: React.FC = () => {
             {/* Image Collage Area */}
             <div className="w-full md:w-1/2 relative h-[500px] md:h-[700px]">
               {/* Main Top Image */}
-              <div className="absolute top-0 left-0 w-[85%] h-[55%] overflow-hidden rounded-sm z-10">
+              <div className="absolute top-0 left-0 w-[85%] h-[55%] overflow-hidden rounded-[15px] border-4 border-white shadow-sm z-10">
                 <img
                   src="https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/96968067-0474-4cca-85c8-31de4a0650e9/Authentiek+Italiaans+restaurant%2C+Italiaans+restaurant+Amsterdam%2C+Italiaans+restaurant+omgeving+Amsterdam6.jpeg?format=1500w"
                   alt="Food Spread"
@@ -199,7 +199,7 @@ const MenuPage: React.FC = () => {
               </div>
 
               {/* Bottom B&W Image */}
-              <div className="absolute bottom-0 right-0 w-[60%] h-[55%] overflow-hidden rounded-sm z-20 border-8 border-white shadow-xl">
+              <div className="absolute bottom-0 right-0 w-[60%] h-[55%] overflow-hidden rounded-[15px] border-4 border-white shadow-xl z-20">
                 <img
                   src="https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/477a6416-aa18-462b-9867-c081c390ae7b/Authentiek+Italiaans+restaurant%2C+Italiaans+restaurant+Amsterdam%2C+Italiaans+restaurant+omgeving+Amsterdam18.jpg?format=1000w"
                   alt="Staff Member"
