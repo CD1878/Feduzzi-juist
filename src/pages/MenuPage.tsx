@@ -24,16 +24,11 @@ const MenuPage: React.FC = () => {
   return (
     <div className="font-sans text-gray-800 bg-feduzzi-cream min-h-screen flex flex-col">
 
-      {/* Announcement Bar */}
-      <div className="bg-white text-center py-2 text-sm font-sans tracking-wide border-b border-gray-100 hidden md:block">
-        <p>nieuwe vestiging <strong>Feduzzi Laren</strong> - nu open!</p>
-      </div>
-
       {/* Header */}
       <Header />
 
       {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[70vh] bg-hero-pattern bg-cover bg-center bg-no-repeat bg-fixed flex items-center justify-center">
+      <section className="relative h-[60vh] md:h-[70vh] bg-hero-pattern bg-cover bg-center bg-no-repeat bg-fixed flex items-center justify-center mt-20">
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 text-center px-4">
           <h1 className="text-white font-serif text-4xl md:text-6xl lg:text-7xl font-light tracking-wide">
@@ -43,11 +38,11 @@ const MenuPage: React.FC = () => {
       </section>
 
       {/* Sub Navigation Bar */}
-      <div className="bg-feduzzi-red py-4 md:py-6 sticky top-[88px] z-40 shadow-md">
+      <div className="bg-feduzzi-red py-4 md:py-6 sticky top-[110px] z-40 shadow-md">
         <div className="container mx-auto flex justify-center gap-8 md:gap-24 text-white text-base md:text-xl font-sans tracking-wide">
-          <a href="#maaltijden" className="hover:opacity-80 transition-opacity">Maaltijden</a>
-          <a href="#broodjes" className="hover:opacity-80 transition-opacity">Broodjes</a>
-          <a href="#traiteur" className="hover:opacity-80 transition-opacity">Traiteur</a>
+          <Link to="/webshop#maaltijden" className="hover:opacity-80 transition-opacity">Maaltijden</Link>
+          <Link to="/webshop#broodjes" className="hover:opacity-80 transition-opacity">Broodjes</Link>
+          <Link to="/webshop#traiteur" className="hover:opacity-80 transition-opacity">Traiteur</Link>
         </div>
       </div>
 
@@ -124,9 +119,9 @@ const MenuPage: React.FC = () => {
                 Heerlijke maaltijden van (vega)lasagne's tot authentieke pasta's en verfijnde desserts. Bekijk ons uitgebreide menu via de button hieronder
               </p>
               <div className="pt-2">
-                <a href="#" className="inline-block border border-feduzzi-green text-feduzzi-green px-8 py-3 rounded-sm hover:bg-feduzzi-green hover:text-white transition-colors text-sm tracking-widest uppercase">
-                  Bekijk het maaltijden menu
-                </a>
+                <Link to="/webshop#maaltijden" className="inline-block border border-feduzzi-green text-feduzzi-green px-8 py-3 rounded-sm hover:bg-feduzzi-green hover:text-white transition-colors text-sm tracking-widest uppercase">
+                  Bestel maaltijden
+                </Link>
               </div>
             </div>
 
@@ -144,7 +139,7 @@ const MenuPage: React.FC = () => {
                 Royaal belegde Italiaanse broodjes om van te genieten tijdens de lunchpauze. Bestel jouw favoriet via de knop hieronder
               </p>
               <div className="pt-2">
-                <Link to="/#order" className="inline-block border border-feduzzi-green text-feduzzi-green px-8 py-3 rounded-sm hover:bg-feduzzi-green hover:text-white transition-colors text-sm tracking-widest uppercase">
+                <Link to="/webshop#broodjes" className="inline-block border border-feduzzi-green text-feduzzi-green px-8 py-3 rounded-sm hover:bg-feduzzi-green hover:text-white transition-colors text-sm tracking-widest uppercase">
                   Bestel broodjes
                 </Link>
               </div>
@@ -164,9 +159,9 @@ const MenuPage: React.FC = () => {
                 Verse bereide maaltijden voor bijzondere (zakelijke) gelegenheden die we aan de deur komen brengen of die je gemakkelijk ophaalt bij ons. Bekijk ons uitgebreide overzicht
               </p>
               <div className="pt-2">
-                <a href="#" className="inline-block border border-feduzzi-green text-feduzzi-green px-8 py-3 rounded-sm hover:bg-feduzzi-green hover:text-white transition-colors text-sm tracking-widest uppercase">
-                  Bekijk het catering menu
-                </a>
+                <Link to="/webshop#traiteur" className="inline-block border border-feduzzi-green text-feduzzi-green px-8 py-3 rounded-sm hover:bg-feduzzi-green hover:text-white transition-colors text-sm tracking-widest uppercase">
+                  Bekijk catering
+                </Link>
               </div>
             </div>
           </div>

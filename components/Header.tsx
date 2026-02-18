@@ -88,8 +88,7 @@ const Header: React.FC = () => {
               <img
                 src={LOGO_URL}
                 alt="Feduzzi"
-                className={`w-full h-auto transition-all duration-300 ${isScrolled ? 'filter invert-0' : 'filter brightness-0 invert'}`}
-              // Note: Assuming logic for logo color. Original code used invert. Adjusting for standard logo.
+                className={`w-full h-auto transition-all duration-300 ${isScrolled ? 'invert' : 'brightness-0 invert'}`}
               />
             </Link>
           </div>
@@ -141,15 +140,15 @@ const Header: React.FC = () => {
                 <Instagram size={20} />
               </a>
             </div>
-            <a
-              href="#order"
+            <Link
+              to="/webshop#broodjes"
               className={`border px-6 py-2 uppercase tracking-wider text-sm transition-colors duration-300 font-medium ${isScrolled
                 ? 'border-feduzzi-green text-feduzzi-green hover:bg-feduzzi-green hover:text-white'
                 : 'border-white text-white hover:bg-white hover:text-feduzzi-green'
                 }`}
             >
               Bestel broodjes
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -199,13 +198,13 @@ const Header: React.FC = () => {
               )}
             </div>
           ))}
-          <a
-            href="/#order"
+          <Link
+            to="/webshop#broodjes"
             className="mt-6 border-2 border-feduzzi-green text-feduzzi-green px-10 py-3 rounded-full text-lg uppercase tracking-widest hover:bg-feduzzi-green hover:text-white transition-all duration-300"
             onClick={() => setMobileMenuOpen(false)}
           >
             Bestel broodjes
-          </a>
+          </Link>
           <div className="flex space-x-8 mt-8 pb-8">
             <a href="https://facebook.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-feduzzi-blue transition-colors"><Facebook size={28} /></a>
             <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-feduzzi-red transition-colors"><Instagram size={28} /></a>

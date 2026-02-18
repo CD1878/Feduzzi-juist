@@ -47,32 +47,42 @@ const Intro: React.FC = () => {
 
               {/* Left Image: Bottles */}
               <div className="col-start-1 col-end-5 row-start-1 row-end-4 z-10 transform translate-y-8">
-                <img src={INTRO_IMAGES.bottles} alt="Bottles" className="w-full h-full object-cover rounded-sm shadow-lg hover:scale-[1.02] transition-transform duration-500" />
+                <div className="p-3 bg-white shadow-xl rounded-sm rotate-[-2deg] transition-transform duration-500 hover:rotate-0 hover:scale-[1.02]">
+                  <img src={INTRO_IMAGES.bottles} alt="Bottles" className="w-full h-full object-cover rounded-sm" />
+                </div>
               </div>
 
               {/* Center Top Image: Meatballs - Overlapping left */}
               <div className="col-start-4 col-end-8 row-start-2 row-end-5 z-20">
-                <img src={INTRO_IMAGES.meatballs} alt="Food" className="w-full h-full object-cover rounded-sm shadow-xl hover:scale-[1.02] transition-transform duration-500" />
+                <div className="p-3 bg-white shadow-2xl rounded-sm rotate-[3deg] transition-transform duration-500 hover:rotate-0 hover:scale-[1.02]">
+                  <img src={INTRO_IMAGES.meatballs} alt="Food" className="w-full h-full object-cover rounded-sm" />
+                </div>
               </div>
 
               {/* Right Top Image: Staff */}
               <div className="col-start-8 col-end-12 row-start-1 row-end-4 z-10 transform -translate-y-4">
-                <img src={INTRO_IMAGES.staff} alt="Staff" className="w-full h-full object-cover rounded-sm shadow-lg hover:scale-[1.02] transition-transform duration-500" />
+                <div className="p-3 bg-white shadow-xl rounded-sm rotate-[-1deg] transition-transform duration-500 hover:rotate-0 hover:scale-[1.02]">
+                  <img src={INTRO_IMAGES.staff} alt="Staff" className="w-full h-full object-cover rounded-sm" />
+                </div>
               </div>
 
               {/* Center Bottom Image: Salmon - Overlapping Meatballs */}
               <div className="col-start-3 col-end-7 row-start-4 row-end-7 z-30 transform -translate-x-4">
-                <img src={INTRO_IMAGES.foodPrep} alt="Food Prep" className="w-full h-full object-cover rounded-sm shadow-xl hover:scale-[1.02] transition-transform duration-500" />
+                <div className="p-3 bg-white shadow-2xl rounded-sm rotate-[-2deg] transition-transform duration-500 hover:rotate-0 hover:scale-[1.02]">
+                  <img src={INTRO_IMAGES.foodPrep} alt="Food Prep" className="w-full h-full object-cover rounded-sm" />
+                </div>
               </div>
 
               {/* Right Bottom Image: Bag - Overlapping Staff */}
               <div className="col-start-9 col-end-13 row-start-4 row-end-7 z-20 transform translate-x-2">
-                <img src={INTRO_IMAGES.bag} alt="Service" className="w-full h-full object-cover rounded-sm shadow-lg hover:scale-[1.02] transition-transform duration-500" />
+                <div className="p-3 bg-white shadow-xl rounded-sm rotate-[2deg] transition-transform duration-500 hover:rotate-0 hover:scale-[1.02]">
+                  <img src={INTRO_IMAGES.bag} alt="Service" className="w-full h-full object-cover rounded-sm" />
+                </div>
               </div>
 
               <div className="col-start-7 col-end-11 row-start-4 row-end-7 z-10 transform -translate-y-8">
-                <div className="w-full h-full overflow-hidden rounded-sm shadow-lg">
-                  <img src="https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/79a77524-d471-4efd-a2e7-8ff38bffe8c2/380536255_172926439119013_1414290766591190903_n.jpg" className="w-full h-full object-cover hover:scale-[1.02] transition-transform duration-500" alt="Pasta" />
+                <div className="w-full h-full p-3 bg-white shadow-lg rounded-sm rotate-1">
+                  <img src="https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/79a77524-d471-4efd-a2e7-8ff38bffe8c2/380536255_172926439119013_1414290766591190903_n.jpg" className="w-full h-full object-cover rounded-sm hover:scale-[1.02] transition-transform duration-500" alt="Pasta" />
                 </div>
               </div>
             </div>
