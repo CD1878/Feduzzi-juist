@@ -42,7 +42,7 @@ const WebshopPage: React.FC = () => {
             </section>
 
             {/* Sticky Category Nav */}
-            <div className="sticky top-[110px] z-30 bg-white shadow-sm border-b border-gray-200">
+            <div className="sticky top-[100px] z-30 bg-white shadow-sm border-b border-gray-200">
                 <div className="container mx-auto px-4 overflow-x-auto scrollbar-hide">
                     <nav className="flex justify-center min-w-max">
                         {categories.map(cat => (
