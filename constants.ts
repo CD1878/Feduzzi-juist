@@ -57,4 +57,4 @@ export const INTRO_IMAGES = {
 };
 
 export const LOGO_URL = "https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/510e5fdb-cdbb-45a3-8dd8-671829ef47e2/feduzzi+logo+wit+transparant.png";
-export const VIDEO_URL = "https://video.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/54935eb5-6cf5-4f21-a23e-b114b07166c6/1080p.mp4";
+export const VIDEO_URL = "/videos/hero.mp4";

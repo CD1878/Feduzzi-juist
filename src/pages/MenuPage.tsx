@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Instagram, Facebook, X, Menu as MenuIcon } from 'lucide-react';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 const MenuPage: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -28,51 +30,7 @@ const MenuPage: React.FC = () => {
       </div>
 
       {/* Header */}
-      <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/90 py-2' : 'bg-transparent py-6'} text-white`}>
-        <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
-
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link to="/">
-              <img
-                src="https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/510e5fdb-cdbb-45a3-8dd8-671829ef47e2/feduzzi+logo+wit+transparant.png?format=1500w"
-                alt="Feduzzi Logo"
-                className="h-12 md:h-20 w-auto"
-              />
-            </Link>
-          </div>
-
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8 text-lg font-sans tracking-wide">
-            <div className="relative group cursor-pointer">
-              <span className="hover:text-gray-300 transition-colors">Menu</span>
-            </div>
-            <Link to="/#sfeer" className="hover:text-gray-300 transition-colors">Sfeer</Link>
-            <Link to="/#over-ons" className="hover:text-gray-300 transition-colors">Over ons</Link>
-            <Link to="/#werken-bij" className="hover:text-gray-300 transition-colors">Werken bij</Link>
-            <Link to="/#vestigingen" className="hover:text-gray-300 transition-colors">Vestigingen</Link>
-          </nav>
-
-          {/* Right Actions */}
-          <div className="hidden md:flex items-center gap-6">
-            <div className="flex gap-4">
-              <a href="#" className="hover:text-gray-300"><Facebook size={20} /></a>
-              <a href="#" className="hover:text-gray-300"><Instagram size={20} /></a>
-            </div>
-            <Link to="/#order" className="bg-feduzzi-red hover:bg-red-800 text-white px-6 py-2 rounded-sm border border-transparent transition-colors text-lg">
-              Bestel broodjes
-            </Link>
-          </div>
-
-          {/* Mobile Menu Toggle */}
-          <div className="md:hidden flex items-center gap-4">
-            <Link to="/#order" className="bg-feduzzi-red text-white px-3 py-1 text-sm rounded-sm">Bestel</Link>
-            <button onClick={toggleMobileMenu} className="text-white">
-              {isMobileMenuOpen ? <X size={28} /> : <MenuIcon size={28} />}
-            </button>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[70vh] bg-hero-pattern bg-cover bg-center bg-no-repeat bg-fixed flex items-center justify-center">
@@ -85,7 +43,7 @@ const MenuPage: React.FC = () => {
       </section>
 
       {/* Sub Navigation Bar */}
-      <div className="bg-feduzzi-red py-4 md:py-6 sticky top-[60px] md:top-[85px] z-40 shadow-md">
+      <div className="bg-feduzzi-red py-4 md:py-6 sticky top-[88px] z-40 shadow-md">
         <div className="container mx-auto flex justify-center gap-8 md:gap-24 text-white text-base md:text-xl font-sans tracking-wide">
           <a href="#maaltijden" className="hover:opacity-80 transition-opacity">Maaltijden</a>
           <a href="#broodjes" className="hover:opacity-80 transition-opacity">Broodjes</a>
@@ -275,54 +233,7 @@ const MenuPage: React.FC = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-feduzzi-dark-red text-white py-16">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="flex flex-col items-center mb-12">
-            <Link to="/">
-              <img
-                src="https://images.squarespace-cdn.com/content/v1/65d0ba3a3921ea6aa4f09569/510e5fdb-cdbb-45a3-8dd8-671829ef47e2/feduzzi+logo+wit+transparant.png?format=1500w"
-                alt="Feduzzi Logo"
-                className="h-16 mb-8"
-              />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-4 text-center md:text-left">
-            <div className="flex flex-col items-center md:items-start space-y-3">
-              <h3 className="font-serif text-2xl italic mb-2">Vestigingen</h3>
-              <a href="#" className="hover:text-gray-300 font-light underline decoration-1 underline-offset-4 text-sm">Amsterdam</a>
-              <a href="#" className="hover:text-gray-300 font-light underline decoration-1 underline-offset-4 text-sm">Laren</a>
-            </div>
-
-            <div className="flex flex-col items-center md:items-start space-y-3">
-              <h3 className="font-serif text-2xl italic mb-2">Menu</h3>
-              <a href="#maaltijden" className="hover:text-gray-300 font-light underline decoration-1 underline-offset-4 text-sm">Maaltijden</a>
-              <a href="#broodjes" className="hover:text-gray-300 font-light underline decoration-1 underline-offset-4 text-sm">Broodjes</a>
-              <a href="#traiteur" className="hover:text-gray-300 font-light underline decoration-1 underline-offset-4 text-sm">Traiteur</a>
-              <a href="#" className="hover:text-gray-300 font-light underline decoration-1 underline-offset-4 text-sm">Catering</a>
-            </div>
-
-            <div className="flex flex-col items-center md:items-start space-y-3">
-              <h3 className="font-serif text-2xl italic mb-2">Bestellen</h3>
-              <Link to="/#order" className="hover:text-gray-300 font-light underline decoration-1 underline-offset-4 text-sm">Online broodjes</Link>
-              <Link to="/#order" className="hover:text-gray-300 font-light underline decoration-1 underline-offset-4 text-sm">Catering Amsterdam</Link>
-              <Link to="/#order" className="hover:text-gray-300 font-light underline decoration-1 underline-offset-4 text-sm">Catering Laren</Link>
-            </div>
-
-            <div className="flex flex-col items-center md:items-start space-y-3">
-              <h3 className="font-serif text-2xl italic mb-2">Volg ons</h3>
-              <div className="flex gap-4">
-                <a href="#" className="hover:text-gray-300"><Facebook size={20} /></a>
-                <a href="#" className="hover:text-gray-300"><Instagram size={20} /></a>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-t border-white/20 mt-16 pt-8 text-center text-xs font-light text-gray-300">
-            <p>Cookieverklaring | Privacyverklaring | © 2026 Feduzzi. All rights reserved | Made by <a href="#" className="underline">Chef Digital</a></p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
